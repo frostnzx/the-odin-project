@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 800px;
+}
+#announce-label {
+    display: flex;
+    font-size: 60px;
+}
+#btn-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 50px;
+    gap: 20px;
+}
+#score-label {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+
+    font-size: 25px;
+}
+.btn {
+    width: 250px;
+    height: 50px;
+}
