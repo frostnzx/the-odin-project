@@ -21,6 +21,14 @@ container.addEventListener('click' , (event) => {
         }
         currentDisplay += target.id ; 
     }
+    else if(target.id == "negative") {
+        let newValue = parseFloat(currentDisplay) ; 
+        newValue *= -1 ; 
+        currentDisplay = newValue.toString();
+    }
+    else if(target.id == "back") {
+        currentDisplay = currentDisplay.substring(0 , currentDisplay.length - 1);
+    }
     else if(target.id != "clear"){ // +,-,*,/,=
         if(operatorType == "=") { // this the first input
             if(target.id == "=") {
