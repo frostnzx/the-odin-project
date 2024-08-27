@@ -32,16 +32,14 @@ container.addEventListener('click' , (event) => {
     else if(target.id != "clear"){ // +,-,*,/,=
         if(operatorType == "=") { // this the first input
             if(target.id == "=") {
-                return ; // no second input but use '=' nothing happend
+                return ; // on first input but use '=' nothing happend
             }
-            operatorType = target.id ; 
         }
         else {
             let calculatedTotal = calculate(prevDisplay , currentDisplay) ; 
             currentDisplay = calculatedTotal ; 
-            
-            operatorType = target.id ; 
         }
+        operatorType = target.id ; 
         prevDisplay = currentDisplay ; 
     }
     else { // clear
