@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Fnzx Library</div>
+        <div class="content-container">
+            
+        </div>
+        <div class="buttons-container">
+            <button class="button-addNewBooks" type="button">Add New Book</button>
+        </div>
+    </div>
+    
+    <dialog data-modal>
+        <div class="modal-header">New Book Info</div>
+        <form>
+            <div class="form-container">
+                <input type="text" id="title" placeholder="Title">
+                <input type="text" id="author" placeholder="Author">
+                <input type="text" id="numOfPages" placeholder="Number of Pages">
+                <div>
+                    <input type="radio" id="read" name="readornot" value="read">
+                    <label for="read">Read</label>
+                    <input type="radio" id="not-read" name="readornot" value="not-read">
+                    <label for="not-read">Not read</label>
+                </div>
+                <div>
+                    <button class="submitButton" type="submit">Add New Book</button>
+                    <button class="closeButton" value="cancel" formmethod="dialog">Close</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
