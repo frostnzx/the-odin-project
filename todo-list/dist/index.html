@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo List</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="web-header">Todo-list</div>
+    <div class="main-content">
+      <div class="sidebar-container">
+        <div class="sidebar-btn-container">
+          <button class="all-btn">All</button>
+          <button class="today-btn">Today</button>
+          <button class="complete-btn">Completed</button>
+        </div>
+        <div class="sidebar-project-btn-container">
+          <div class="project-list-component">Projects(1)</div>
+          <hr class="project-section-line" />
+          <button class="project-add-btn">New Project</button>
+          <div class="project-container"></div>
+        </div>
+      </div>
+      <div class="task-display">
+        <div class="task-header">Header</div>
+        <div class="task-info">
+          <div class="task-list-component">Tasks(0)</div>
+          <button class="task-add-btn">New Task</button>
+        </div>
+        <hr class="section-line" />
+        <div class="task-container"></div>
+      </div>
+    </div>
+    <dialog data-modal id="new-project-modal">
+      <div class="modal-header">Add project</div>
+      <form>
+        <div class="form-container">
+          <input type="text" id="new-project-title" placeholder="Title" />
+          <div>
+            <button class="submitButton project-add-submit" type="submit">
+              Add New Project
+            </button>
+            <button class="closeButton" value="cancel" formmethod="dialog">
+              Close
+            </button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+    <dialog data-modal id="new-task-modal">
+      <div class="modal-header">Add task</div>
+      <form>
+        <div class="form-container">
+          <div class="form-container">
+            <input type="text" id="new-task-title" placeholder="Title" />
+            <input type="text" id="new-task-project" placeholder="Project" />
+            <input type="date" id="new-task-date" placeholder="date" />
+          </div>
+          <div>
+            <button class="submitButton task-add-submit" type="submit">
+              Add New Task
+            </button>
+            <button class="closeButton" value="cancel" formmethod="dialog">
+              Close
+            </button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
